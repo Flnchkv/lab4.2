@@ -70,14 +70,11 @@ include 'func.php';
 	        		<input type="text" class="form-control" name="zadacha" value="" placeholder="Задача">
 	        	</div>
 				<div class="form-group">
-	        		<input type="text" class="form-control" name="date" value="" placeholder="Дата">
-	        	</div>
-				<div class="form-group">
-	        		<input type="text" class="form-control" name="score" value="" placeholder="Баллы">
-	        	</div>
-				<div class="form-group">
-	        		<input type="checkbox" class="form-control" name="zachet" value="" placeholder="Зачёт">
-	        	</div>
+                    <input type="text" class="form-control" name="date" value="" placeholder="Дата">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="score" value="" placeholder="Баллы">
+                </div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>

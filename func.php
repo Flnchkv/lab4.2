@@ -6,24 +6,23 @@ $theme = $_POST['theme'];
 $zadacha = $_POST['zadacha'];
 $date = $_POST['date'];
 $score = $_POST['score'];
-$zachet = $_POST['zachet'];
 
 // Create
 
 if (isset($_POST['submit'])) {
-	$sql = ("INSERT INTO `users`(`id`, `name`, `theme`, `zadacha`, `date`, `score`, `zachet`) VALUES (?,?,?,?,?,?,?)");
+	$sql = ("INSERT INTO `users`(`name`, `theme`, `zadacha`, `date`, `score`) VALUES(?,?,?,?,?)");
 	$query = $pdo->prepare($sql);
-	$query->execute([$id, $name, $theme, $zadacha, $date, $score, $zachet]);
+	$query->execute([$name, $theme, $zadacha, $date, $score]);
 	$success = '<div class="alert alert-success alert-dismissible fade show" role="alert">
   <strong>Данные успешно отправлены!</strong> Вы можете закрыть это сообщение.
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>';
-}else{
-	echo 'error';
+	
+} else {
+	echo('error');
 }
-
 // Read
 
 $sql = $pdo->prepare("SELECT * FROM `users`");
