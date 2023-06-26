@@ -1,0 +1,58 @@
+    .hat{
+      background-color: #e494ff;
+    }
+
+    a, p,h1,h2,td{
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    td{
+     padding: 10px;
+    }
+
+    h2{
+      margin: auto;
+      text-align: center;
+    }
+
+    .button{
+      background: #9948b4;
+      border-radius: 15px;
+      justify-content: center;
+      position: relative;
+      width: auto;
+      height: 40px;
+      border: 0;
+    
+      font-family: 'Montserrat Alternates';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+    
+      color: #FFFFFF;
+    }
+
+    table{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .add{
+      width: 25%;
+    }
+
+    .tic{
+      pointer-events: none;
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
